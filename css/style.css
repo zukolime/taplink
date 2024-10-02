@@ -24,7 +24,7 @@ body {
   padding-left: 19px;
   padding-right: 166px;
   padding-bottom: 94px;
-  background: url('/img/bg.png') no-repeat center / cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.59) 0%, rgba(0, 0, 0, 0.59) 100%), url(../img/bg.png) lightgray 50% / cover no-repeat;
   border-radius: 20px 20px 0px 0px;
 }
 .hello {
@@ -82,13 +82,44 @@ body {
   background: rgb(245, 245, 245);
   margin-top: 12px;
   margin-bottom: 12px;
+  padding-top: 2px;
+  padding-bottom: 17px;
 }
 .buttons {  
   display: flex;
   justify-content: space-between;
-  
+  max-width: 260px;
+  margin: auto;
+  gap: 3px;
 }
 .button {
-  height: 40px;
-  border: 1px solid #000;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  flex-shrink: 1;
+  width: 100%;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  gap: 10px;
+}
+.button.git {
+  background: #000000;
+  max-width: 261.77px;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+.button.tg {
+  background: #0088cc;
+}
+.button.gmail {
+  background: #c71610;
+}
+.button.whatsapp {
+  background: #4fce5d;
 }
